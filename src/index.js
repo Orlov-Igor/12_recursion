@@ -1,14 +1,14 @@
 
-function findPalindrom(num, count = 0) {
+function findPalindrome(num, count = 0) {
     
     if(num === Number(num.toString().split("").reverse().join(""))) {
         return {
             number: num,
-            status: "Is palindrom",
+            status: "Is palindrome",
             iterations: count,
         };
     };
-return findPalindrom (num + Number(num.toString().split("").reverse().join("")), count +=1);     
+return findPalindrome (num + Number(num.toString().split("").reverse().join("")), count +=1);     
 };
 
-console.log(findPalindrom(84));
+console.log(findPalindrome(84));
